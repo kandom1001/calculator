@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.calculator button {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 10px;
+  line-height: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: blue;
+}
+.calculator {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator-numberPad {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator-signPad {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+}
+
+.calculator-display {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 40px;
+  padding: 5px;
+  align-self: center;
+  word-wrap: normal;
+  font-weight: bold;
+  text-align: right;
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: flex-end;
+}
+.calculator-digit {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.calculator-sign {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.calculator-numberPad-0 {
+  width: 100px;
+}
+
+.calculator-sign-clear {
+  width: 100px;
+}
+
+.calculator-sign-euqal {
+  width: 100px;
 }
